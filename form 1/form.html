@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+<form action="inscription.html" method="get">
+       
+    
+      
+ <div class="grid-container"> 
+    <fieldset>
+        <legend>Inscription</legend>
+      
+
+        <div class="grid-item1"><label for="nom">Nom et Prénom *:</label>
+                                <input type="text" id="nom" name="nom"  placeholder ="premiere lettre en Majuscule" required
+                                 pattern ="[A-z]{6.30}"></div>  <br>
+        <div class="grid-item2"><label for="Numero CIN">CIN *:</label>
+                                <input type="NumeroCIN" id="NumeroCIN" name="Numero CIN" maxlength = '8' required
+                                placeholder ="8 chiffres collés" pattern = "[0-9]{8}"> </div><br>
+            
+        
+        <div class="grid-item3"><label for="email">Adresse email *:</label>
+                                <input type="email" name="email" id="email" placeholder ="@ " required
+                                 pattern ="[A-z0-9._-]+[@]{1}[a-zA-Z0-9._-]+[.]{1}[a-zA-Z]{2,10}"  > </div><br>
+        <div class="grid-item4"><label id="niveau" for="niveau">Niveau Scolaire:</label>
+                                 <input type="radio"   name="Secondaire" value="Secondaire" cheked>Secondaire   
+                                <input type="radio"   name="Universitaire" value="Universitaire">Universitaire
+                                <input type="radio"  name="Autre" value="Autre">Autre </div><br>
+ 
+        <div class="grid-item5">
+            <div class="right"> <label for="Modules de formation" id="Modules de formation">Modules de formation :</label></div>
+            <div class="left"> <select multiple name="Modules de formation" id="Modulesdeformation" >
+                                 <option value="HTML">HTML</option>
+                                 <option value="CSS3">CSS3</option>
+                                 <option value="JavaScript ">JavaScript</option>
+                                 <option value="JQuery">JQuery</option></select></div><br></div>
+        <div class="grid-item6">(*)Champs Obligatoire</div> 
+        <div class="grid-item7"> <br><br><input type="submit" onclick="Verifier()" value="Envoyer">
+                                  <input type="submit" value="Annuler"></div><br>
+        
+        
+       
+        
+    </fieldset>
+  </div> 
+
+</form>
+  
+</body>
+</html>
+    
